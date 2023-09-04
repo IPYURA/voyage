@@ -1,0 +1,73 @@
+#wrap {
+  width: 800px;
+  height: 1100px;
+  border: 1px solid black;
+  margin: auto;
+}
+#hd_title {
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 50px;
+}
+#hd_semi_title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.info {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 25px 0 10px 40px;
+}
+form {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 0 80px;
+}
+input {
+  margin-bottom: 10px;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+td,
+tr {
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 10px 30px;
+  text-align: center;
+}
+th {
+  border: 1px solid black;
+  padding: 10px 30px;
+  text-align: center;
+}
+.bold {
+  font-weight: 700;
+  /* 일부만 적용되는 이유를 모르겠음 */
+}
+#motivation {
+  width: 610px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+button {
+  width: 110px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}
+button:first-child {
+  font-weight: 700;
+}
+#buttonblock {
+  margin: 20px 0 0 95px;
+}
+hr {
+  width: 86%;
+}

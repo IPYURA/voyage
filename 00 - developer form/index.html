@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지원서</title>
+    <link rel="stylesheet" href="/00 - developer form/style.css" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="hd_title">프런트엔트 개발자 지원서</div>
+        <div id="hd_semi_title">
+          HTML, CSS, Javascript 에 자신있는 웹 퍼블리셔 & 프런트엔드
+          개발자입니다.
+        </div>
+        <div><hr id="hr1" /></div>
+      </header>
+
+      <section>
+        <div class="info"><mark>개인정보</mark></div>
+        <form action="">
+          이름
+          <input type="text" />
+        </form>
+        <form action="">
+          연락처
+          <input type="text" />
+        </form>
+        <div class="info"><mark>지원분야</mark></div>
+        <form>
+          <input type="radio" name="field" /> 웹 퍼블리싱<br />
+          <input type="radio" name="field" /> 웹 어플리케이션 개발<br />
+          <input type="radio" name="field" /> 개발 환경 개선
+        </form>
+
+        <div class="info"><mark>사용 가능 언어</mark></div>
+        <table>
+          <tr class="bold">
+            <!-- class='bold' 가 안먹어서 th -->
+            <th>구분</th>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JS</th>
+            <th>TS</th>
+            <th>React</th>
+          </tr>
+          <tr>
+            <td class="bold">사용정도</td>
+            <td>상</td>
+            <td>상</td>
+            <td>중상</td>
+            <td>중</td>
+            <td>중상</td>
+          </tr>
+          <tr>
+            <td class="bold">프로젝트</td>
+            <td>4개</td>
+            <td>8개</td>
+            <td>3개</td>
+            <td>7개</td>
+            <td>5개</td>
+          </tr>
+        </table>
+
+        <div class="info"><mark>지원 동기</mark></div>
+        <div id="motivation">본사 지원 동기를 간략히 써주세요.</div>
+      </section>
+
+      <footer>
+        <div id="buttonblock">
+          <button>접수하기</button>
+          <button>다시 쓰기</button>
+        </div>
+
+        <!--
+          <input type="submit" value="접수하기"/>
+          <input type="submit" value="다시 쓰기"/>
+          로 버튼을 구현할 수도 있다.
+        -->
+      </footer>
+    </div>
+  </body>
+</html>
