@@ -1,0 +1,234 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"); */
+
+/* body {
+  font-family: "Noto Sans", sans-serif;
+} */
+/* #wrap {
+  width: 1040px;
+  height: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+#chan_wrap {
+  width: 1040px;
+  /* border:1px solid gold; */
+  margin: 0 auto;
+  margin-top:60px;
+}
+#event {
+  width: 1040px;
+  height: 328px;
+  /* border: 1px solid #000; */
+  margin-bottom: 66px;
+}
+
+.event_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.event_header .event_headtit,
+.special_header .special_tit {
+  width: 84px;
+  height: 37px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.event_header_right {
+  display: flex;
+  justify-content: space-between;
+  width: 136px;
+}
+
+.event_iconpause {
+  border: 2px solid #e3e3e3;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+.event_iconpause img {
+  margin-left: 7.5px;
+  margin-top: 6px;
+  width: 12px;
+  height: 12px;
+}
+
+.icon_seeall {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #e2e2e2;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.icon_seeall img {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+}
+
+.event_box {
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 272px;
+}
+.event_img01 {
+  width: 310px;
+  height: 207px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.event_img01 img {
+  width: 310px;
+  height: 207px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.event_img01 img:hover {
+  transform: scale(1.2);
+}
+
+.event_des01 span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.event_des01 p {
+  font-size: 14px;
+  color: #666666;
+}
+
+#special {
+  width: 980px;
+  height: 320px;
+}
+
+.special_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.special_box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.special_adimg1 {
+  width: 500px;
+  height: 264px;
+  background-image: url("../contents/ad01.png");
+  border-radius: 10px;
+}
+
+.special_adimg2 {
+  position: absolute;
+  top: 2.5px;
+  width: 500px;
+  height: 264px;
+  background-image: url("../contents/ad02.png");
+  background-size: cover;
+  border-radius: 10px;
+  display: none;
+}
+
+.special_adimg2 {
+  position: absolute;
+  top: 2.5px;
+  width: 500px;
+  height: 264px;
+  background-image: url("../contents/ad02.png");
+  background-size: cover;
+  border-radius: 10px;
+  display: none;
+}
+
+.special_adimg3 {
+  position: absolute;
+  top: 2.5px;
+  width: 500px;
+  height: 264px;
+  background-image: url("../contents/ad03.png");
+  background-size: cover;
+  border-radius: 10px;
+  display: none;
+}
+
+.special_adimg4 {
+  position: absolute;
+  top: 2.5px;
+  width: 500px;
+  height: 264px;
+  background-image: url("../contents/ad04.png");
+  background-size: cover;
+  border-radius: 10px;
+  display: none;
+}
+
+.special_selct {
+  width: 440px;
+  height: 64px;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.special_suite {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.special_suite:first-child {
+  border-top: 1px solid #e6e6e6;
+}
+
+.special_suite:hover {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.special_suite:hover .special_suite_tit {
+  font-weight: bold;
+}
+
+.special_suite_tit {
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: 300;
+}
+.special_suite_des {
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  background: #e6e6e6;
+  text-align: center;
+  font-weight: 200;
+}
+
+#special
+  .special_selct
+  .special_cineliving:hover
+  #special
+  .special_ad
+  .special_adimg1 {
+  display: none;
+}
+
+#slider {
+  width: 500px;
+  height: 264px;
+  overflow: hidden;
+}
+
+.fixed {
+  display: none;
+}

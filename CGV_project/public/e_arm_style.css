@@ -1,0 +1,80 @@
+#e_arm_wrap{
+  width: 100%;
+  background-color: rgb(240,240,240);
+}
+#e_arm_section {
+  /* border: 2px solid green; */
+  width: 1040px;
+  height: 462px;
+  margin: 0 auto;
+}
+#slider_section {
+  position: relative;
+  padding: 110px 0;
+}
+#trigger1 {
+  position: absolute;
+  top: 30px;
+  /* left: 30px; */
+  display: inline-block;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+#trigger2 {
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+/*trying*/
+/* .tab_list li .trigger_btn{
+
+} */
+.tab_list li .cont {
+  display: none;
+}
+.tab_list li.is_on .trigger_btn {
+  font-weight: bold;
+  color: green;
+}
+.tab_list li.is_on .cont {
+  display: block;
+}
+
+/*trying*/
+.movie_chart_img > img {
+  border-radius: 10px;
+}
+#movie_chart1 {
+  display: flex;
+  width: 980px;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  gap: 32px;
+  /* overflow: hidden; */
+  position: absolute;
+  left: 30px;
+  /* background-color: yellow; */
+}
+.movie_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border:0.5px solid #aaa;
+}
+#prev_btn {
+  position: absolute;
+  left: 13px;
+  top: 210px;
+  z-index: 1;
+}
+#next_btn {
+  position: absolute;
+  right: 13px;
+  top: 210px;
+  z-index: 1;
+}
