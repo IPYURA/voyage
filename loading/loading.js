@@ -7,7 +7,7 @@ $(window).on("load", () => {
   setTimeout(() => {
     //  <-* 로딩속도 구현
 
-    loader.fadeOut(300);
+    loader.fadeOut(100);
     html.css({ overflow: "auto" }); //스크롤 방지 해제
   }, 3000); //  <-* 로딩속도 구현
 });
