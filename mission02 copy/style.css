@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li,
+ul {
+  list-style: none;
+}
+#wrap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.box {
+  margin-top: 80px;
+  width: 400px;
+  height: 600px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.box1 {
+  background-image: url("../img/02/crew-01.jpg");
+}
+.box2 {
+  background-image: url("../img/02/crew-02.jpg");
+}
+.box3 {
+  background-image: url("../img/02/crew-03.jpg");
+}
+.items {
+  position: absolute;
+  display: none;
+  position: relative;
+}
+.name {
+  font-size: 40px;
+  color: #fff;
+}
+.work {
+  color: yellow;
+  font-size: 18px;
+  margin-bottom: 55px;
+}
+.text {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  margin: 0 20px 20px;
+  position: absolute;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  bottom: -200px;
+  left: 155px;
+}
+.icon i {
+  color: #fff;
+  font-size: 18px;
+}
+.round {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  line-height: 30px;
+}
+.gradient_box {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+}
+.gra1 {
+  background: rgba(222, 42, 27, 0.5);
+  background: linear-gradient(
+    0deg,
+    rgba(222, 42, 27, 1) 0%,
+    rgba(252, 176, 69, 0) 100%
+  );
+}
+.gra2 {
+  background: rgb(64, 119, 186);
+  background: linear-gradient(
+    0deg,
+    rgba(64, 119, 186, 1) 0%,
+    rgba(69, 163, 252, 0) 100%
+  );
+}
+.gra3 {
+  background: rgb(64, 186, 65);
+  background: linear-gradient(
+    0deg,
+    rgba(64, 186, 65, 1) 0%,
+    rgba(93, 252, 69, 0) 100%
+  );
+}
+
+.box:hover .gradient_box {
+  animation: up 0.5s linear both;
+  display: block;
+}
+.box:hover {
+  box-shadow: 1px 1px 15px #666;
+  animation: positionup 0.5s linear both;
+}
+.box:hover .items {
+  display: inline-block;
+}
+@keyframes up {
+  0% {
+    margin-top: 150%;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes positionup {
+  0% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
