@@ -7,87 +7,52 @@ body::-webkit-scrollbar {
   display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
-.loader {
+.loadingPage {
   border: 1px solid red;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.7); */
   background-color: black;
   z-index: 9999;
   opacity: 1;
   transition: 0.8s ease;
+  display: grid;
+  place-items: center;
 }
 
-/* .loader i {
-  font-size: 80px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -40px 0 0 -40px;
-  color: #fff;
-} */
-
-.wrap {
+/*loader */
+.loadingGage {
   position: relative;
-  width: 600px;
-  height: 1500px;
-  padding: 50px 0;
-  background: #b6c9f0;
+  width: 350px;
+  height: 25px;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 4px;
 }
 
-.wrap > h2 {
-  text-align: center;
-}
-
-.wrap > p {
-  padding: 30px 0;
-  text-align: center;
-}
-
-.class {
-  display: inline-block;
-}
-
-/*loader 4*/
-.loader4 {
-  position: relative;
-  width: 150px;
-  height: 20px;
-  margin-top: calc(50% - 50px);
-  /* top: 45%;
-    top: -webkit-calc(50% - 10px);
-    top: calc(50% - 10px);
-    left: 25%;
-    left: -webkit-calc(50% - 75px);
-    left: calc(50% - 75px);
-   */
-  background-color: rgba(234, 236, 79, 0.2);
-  border: 1px solid yellow;
-  border-radius: 5px;
-}
-
-.loader4:before {
+.loadingGage:before {
   content: "";
   position: absolute;
-  background-color: yellow;
-  top: 0px;
-  left: 0px;
-  height: 20px;
+  background-color: #fff;
+  /* background-color: #000; */
+  top: 3px;
+  left: 3px;
+  height: 17px;
   width: 0px;
   z-index: 0;
   opacity: 1;
-  -webkit-transform-origin: 100% 0%;
-  transform-origin: 100% 0%;
-  -webkit-animation: loader4 4s ease-in-out both;
-  animation: loader4 4s ease-in-out both;
-  border-radius: 5px;
+  border-radius: 2px;
+  /* -webkit-transform-origin: 100% 0%; */
+  /* transform-origin: 100% 0%; */
+  -webkit-animation: loader 4s ease-in-out both;
+  animation: loader 4s ease-in-out both;
 }
 
-.loader4:after {
-  content: "LOADING ...";
+.loadingGage:after {
+  /* content: "LOADING ..."; */
+  content: "";
   color: black;
   font-family: Lato, "Helvetica Neue";
   font-weight: 700;
@@ -101,17 +66,23 @@ body::-webkit-scrollbar {
   border-radius: 5px;
 }
 
-@-webkit-keyframes loader4 {
+.loadingText {
+  color: #fff;
+  padding: 0 0 10px;
+  font-size: 36px;
+}
+
+@-webkit-keyframes loader {
   0% {
     width: 0px;
   }
   70% {
-    width: 100%;
+    width: 342px;
     opacity: 1;
   }
   90% {
     opacity: 0;
-    width: 100%;
+    width: 342px;
   }
   100% {
     opacity: 0;
@@ -119,20 +90,31 @@ body::-webkit-scrollbar {
   }
 }
 
-@keyframes loader4 {
+@keyframes loader {
   0% {
     width: 0px;
   }
   70% {
-    width: 100%;
+    width: 342px;
     opacity: 1;
   }
   90% {
     opacity: 0;
-    width: 100%;
+    width: 342px;
   }
   100% {
     opacity: 0;
     width: 0px;
   }
+}
+
+.wrap {
+  position: relative;
+  width: 600px;
+  height: 100vh;
+  padding: 50px 0;
+  background: #b6c9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
