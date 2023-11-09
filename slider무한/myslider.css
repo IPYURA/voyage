@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li {
+    list-style: none;
+}
+.slide_wrapper{
+    border:1px solid red;
+    position: relative;
+    width: 660px;
+    margin:0 auto;
+    height: 200px;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slides.animated {
+    transition: 0.5s ease-out;
+}
+.slides li {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    float: left;
+}
+.slides li:not(:last-child) {
+    margin-right: 30px;
+}
+.controls {
+    text-align: center;
+    margin-top: 30px;
+}
+.controls span {
+    background: #333;
+    color:#fff;
+    padding:10px 20px;
+    margin:0 10px;
+}
