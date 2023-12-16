@@ -1,0 +1,30 @@
+#frame {
+  width: 1000px;
+  height: 700px;
+  border: 1px solid red;
+}
+#box1 {
+  width: 200px;
+  height: 100px;
+  background-color: skyblue;
+}
+#box1.on {
+  width: 200px;
+  height: 100px;
+  background-color: tomato;
+}
+#box2.on {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+}
+#box2 {
+  width: 200px;
+  height: 100px;
+  background-color: palegreen;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+}
