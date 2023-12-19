@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Simkyungha";
+  src: url(./assets/fonts/SimKyungha.ttf);
+}
+
+* {
+  font-family: "SimKyungha";
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
